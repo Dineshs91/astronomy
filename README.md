@@ -4,11 +4,11 @@ Data obtained from [nasa](https://data.nasa.gov/view/ak9y-cwf9)
 
 Db path: ~/Library/Application Support/meteorite-landings/db
 
-mongod --dbpath ~/Library/Application\ Support/meteorite-landings/db
+```mongod --dbpath ~/Library/Application\ Support/meteorite-landings/db```
 
 ##Import from csv:
 
-mongoimport --db meteorite-db --collection meteorites --type csv --headerline --file Meteorite.csv
+```mongoimport --db meteorite-db --collection meteorites --type csv --headerline --file Meteorite.csv```
 
 ## Remove /ueff from Meteorite.csv
-sed $'s/\xEF\xBB\xBF//' < Meteorite_Landings.csv > Meteorite.csv to remove /ueff in name column.
+```sed $'s/\xEF\xBB\xBF//' < Meteorite_Landings.csv > Meteorite.csv```
