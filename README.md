@@ -4,7 +4,7 @@ Data obtained from [nasa](https://data.nasa.gov/view/ak9y-cwf9)
 
 Db path: ~/Library/Application Support/meteorite-landings/db
 
-```mongod --dbpath ~/Library/Application\ Support/meteorite-landings/db```
+```mongod --dbpath ~/Library/Application\ Support/astronomy/db```
 
 ##Import from csv:
 
