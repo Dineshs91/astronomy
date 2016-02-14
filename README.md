@@ -12,3 +12,8 @@ Db path: ~/Library/Application Support/Astronomy/db
 
 ## Remove /ueff from Meteorite.csv
 ```sed $'s/\xEF\xBB\xBF//' < Meteorite_Landings.csv > Meteorite.csv```
+
+
+## Start python development server
+
+```$ python manage.py runserver```
