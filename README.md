@@ -24,6 +24,7 @@ CREATE TABLE meteorites(
   "geolocation" text,
   "geolocation_state" text
 );
+    
     > .mode csv
     > .seperator ,
     > .import Meteorite_sanitized.csv meteorites
