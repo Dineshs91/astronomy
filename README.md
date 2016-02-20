@@ -16,7 +16,7 @@ Remove the column names from the csv file before importing into csv.
       "recclass" text,
       "mass" float,
       "fall" text,
-      "year" text,
+      "year" datetime,
       "reclat" text,
       "reclong" text,
       "geolocation_address" text,
