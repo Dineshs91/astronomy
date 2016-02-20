@@ -2,6 +2,14 @@
 
 Data obtained from [nasa](https://data.nasa.gov/view/ak9y-cwf9)
 
+## Api
+
+Get all meteorites
+```http://127.0.0.1:8000/v1/meteorites/```
+
+Get a meteorite with its id.
+```http://127.0.0.1:8000/v1/meteorites/12/```
+
 ##Import from csv:
 
 Remove the column names from the csv file before importing into csv.
