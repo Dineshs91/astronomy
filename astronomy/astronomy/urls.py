@@ -20,7 +20,7 @@ from meteorites import views
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register(r'meteorites', views.MeteoriteViewSet)
+router.register(r'v1/meteorites', views.MeteoriteViewSet)
 
 
 urlpatterns = [
