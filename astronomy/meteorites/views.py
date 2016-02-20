@@ -1,10 +1,13 @@
 from django.shortcuts import render
-from rest_framework import viewsets
+from django.shortcuts import get_object_or_404
 
-from meteorites.models import Meteorites
-from meteorites.serializers import MeteoritesSerializer
+from rest_framework import viewsets
+from rest_framework.response import Response
+
+from meteorites.models import Meteorite
+from meteorites.serializers import MeteoriteSerializer
 
 
 class MeteoriteViewSet(viewsets.ModelViewSet):
-    queryset = Meteorites.objects.all()
-    serializer_class = MeteoritesSerializer
+    queryset = Meteorite.objects.all().order_by('id')
+    serializer_class = MeteoriteSerializer

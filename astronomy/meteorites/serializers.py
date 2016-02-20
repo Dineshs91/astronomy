@@ -1,10 +1,10 @@
-from meteorites.models import Meteorites
+from meteorites.models import Meteorite
 from rest_framework import serializers
 
 
-class MeteoritesSerializer(serializers.HyperlinkedModelSerializer):
+class MeteoriteSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Meteorites
+        model = Meteorite
         fields = (
             'id',
             'name',
