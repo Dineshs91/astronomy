@@ -22,7 +22,7 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 router.register(r'meteorites', views.MeteoriteViewSet)
 
+
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^', include(router.urls))
 ]
