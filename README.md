@@ -4,11 +4,13 @@ Data obtained from [nasa](https://data.nasa.gov/view/ak9y-cwf9)
 
 ## Api
 
-Get all meteorites
-```http://127.0.0.1:8000/v1/meteorites/```
+**Note:** A trailing slash is always expected.
 
-Get a meteorite with its id.
-```http://127.0.0.1:8000/v1/meteorites/12/```
+#### Get all meteorites
+```http://127.0.0.1:8000/v1/meteorites/ ```
+
+#### Get a meteorite with its id.
+```http://127.0.0.1:8000/v1/meteorites/12/ ```
 
 ##Import from csv:
 
