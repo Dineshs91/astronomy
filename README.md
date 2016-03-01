@@ -2,7 +2,7 @@
 
 Data obtained from [nasa](https://data.nasa.gov/view/ak9y-cwf9)
 
-Powered by Django.
+Powered by Django and Django rest framework.
 
 ## Api
 
