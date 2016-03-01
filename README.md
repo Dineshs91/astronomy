@@ -2,6 +2,8 @@
 
 Data obtained from [nasa](https://data.nasa.gov/view/ak9y-cwf9)
 
+Powered by Django.
+
 ## Api
 
 **Note:** A trailing slash is always expected.
