@@ -27,6 +27,10 @@ def replace_time(line):
 
     return ','.join(words)
 
+def move_id(line):
+    words = line.split(',')
+    words[0], words[1] = words[1], words[0]
+    return ','.join(words)
 
 
 # open files to read and write.
@@ -34,4 +38,5 @@ with open('Meteorite.csv', 'r') as fr:
     with open('Meteorite_sanitized.csv', 'w') as fw:
         for line in fr:
             newline = replace_time(line)
+            newline = move_id(newline)
             fw.write(newline)
