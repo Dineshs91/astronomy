@@ -4,20 +4,20 @@ from django.db import models
 
 
 class Meteorite(models.Model):
+    name = models.TextField(max_length=50)
     id = models.IntegerField(primary_key=True)
-    name = models.CharField(max_length=50)
-    nametype = models.CharField(max_length=50)
-    recclass = models.CharField(max_length=50)
-    mass = models.CharField(max_length=50)
-    fall = models.CharField(max_length=50)
+    nametype = models.TextField(max_length=50)
+    recclass = models.TextField(max_length=50)
+    mass = models.FloatField()
+    fall = models.TextField(max_length=50)
     year = models.DateTimeField()
-    reclat = models.CharField(max_length=50)
-    reclong = models.CharField(max_length=50)
-    geolocation_address = models.CharField(max_length=50)
-    geolocation_zip = models.CharField(max_length=50)
-    geolocation_city = models.CharField(max_length=50)
-    geolocation = models.CharField(max_length=50)
-    geolocation_state = models.CharField(max_length=50)
+    reclat = models.TextField(max_length=50)
+    reclong = models.TextField(max_length=50)
+    geolocation_address = models.TextField(max_length=50)
+    geolocation_zip = models.TextField(max_length=50)
+    geolocation_city = models.TextField(max_length=50)
+    geolocation = models.TextField(max_length=50)
+    geolocation_state = models.TextField(max_length=50)
 
-    class Meta:
-        db_table = 'meteorite'
+    def __unicode__(self):
+        return str(self.id) + " " + self.name
